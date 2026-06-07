@@ -291,7 +291,7 @@ class BrailleTable():
         
     #0003-B
     @staticmethod
-    def get_braille_list_to_index_list(braille_list: list) -> list:
+    def get_braille_list_to_index_list(braille_list: list[str]) -> list[int]:
         """
         EN
         Receives multiple characters (strings), each of which must be a valid braille symbol, and returns a list of integers (int), 
