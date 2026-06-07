@@ -14,8 +14,8 @@ def braille_list() -> list[str]:
 ```
 
 ### Description
-Returns all 64 six‑dot braille symbols.
-The symbols follow the standard Unicode Braille Pattern block, ranging from U+2800 to U+283F.
+- Returns all 64 six‑dot braille symbols.
+- The symbols follow the standard Unicode Braille Pattern block, ranging from U+2800 to U+283F.
 ### Details
 - Output type: list[str]
 - Total items: 64
@@ -29,8 +29,8 @@ def binary_list() -> list[list[int]]:
 ```
 
 ### Description
-Returns a list with 64 items, where each item is a 6‑bit array representing the binary pattern of a braille character.
-The bit patterns follow the natural numeric order from 0 to 63, each formatted as a 6‑bit binary sequence (000000 → 111111).
+- Returns a list with 64 items, where each item is a 6‑bit array representing the binary pattern of a braille character.
+- The bit patterns follow the natural numeric order from 0 to 63, each formatted as a 6‑bit binary sequence (000000 → 111111).
 ### Details
 - Output type: list[list[int]]
 - Total items: 64
@@ -46,8 +46,8 @@ def reverse_binary_list() -> list[list[int]]:
 ```
 
 ### Description
-Returns a list with 64 items, where each item is a 6‑bit array representing the binary pattern of a braille character, but in reverse bit order.
-Each 6‑bit sequence is reversed from right to left, transforming abcxyz into zyxcba.
+- Returns a list with 64 items, where each item is a 6‑bit array representing the binary pattern of a braille character, but in reverse bit order.
+- Each 6‑bit sequence is reversed from right to left, transforming abcxyz into zyxcba.
 ### Details
 - Output type: list[list[int]]
 - Total items: 64
@@ -64,8 +64,8 @@ def binary_string_list() -> list[str]:
 ```
 
 ### Description
-Returns a list with 64 items, where each item is a 6‑bit binary string representing the braille pattern for values from 0 to 63.
-Each number is formatted as a fixed‑width 6‑character binary string ("000000" → "111111").
+- Returns a list with 64 items, where each item is a 6‑bit binary string representing the braille pattern for values from 0 to 63.
+- Each number is formatted as a fixed‑width 6‑character binary string ("000000" → "111111").
 ### Details
 - Output type: list[str]
 - Total items: 64
@@ -81,8 +81,8 @@ def reverse_binary_string_list() -> list[str]:
 ```
 
 ### Description
-Returns a list with 64 items, where each item is a 6‑bit binary string reversed from right to left.
-Each binary string corresponds to the numbers 0 to 63, but with the bit order inverted ("abcxyz" → "zyxcba").
+- Returns a list with 64 items, where each item is a 6‑bit binary string reversed from right to left.
+- Each binary string corresponds to the numbers 0 to 63, but with the bit order inverted ("abcxyz" → "zyxcba").
 ### Details
 - Output type: list[str]
 - Total items: 64
@@ -99,8 +99,8 @@ def unicode_list() -> list[str]:
 ```
 
 ### Description
-Returns a list with 64 Unicode strings, each representing the hexadecimal Unicode code point of a braille character.
-The values follow the standard Unicode Braille Patterns block, from U+2800 to U+283F.
+- Returns a list with 64 Unicode strings, each representing the hexadecimal Unicode code point of a braille character.
+- The values follow the standard Unicode Braille Patterns block, from U+2800 to U+283F.
 ### Details
 - Output type: list[str]
 - Total items: 64
@@ -116,8 +116,8 @@ def dot_count() -> list[int]:
 ```
 
 ### Description
-Returns a list with 64 integers, where each value represents the number of active dots (1–6) in the corresponding braille character.
-The count is computed from the binary pattern of each braille cell.
+- Returns a list with 64 integers, where each value represents the number of active dots (1–6) in the corresponding braille character.
+- The count is computed from the binary pattern of each braille cell.
 ### Details
 - Output type: list[int]
 - Total items: 64
@@ -132,8 +132,8 @@ def dot_numbering_list() -> list[list[int]]:
 ```
 
 ### Description
-Returns a list with 64 items, where each item is a list containing the active dot numbers (1–6) of the corresponding braille character.
-Dot numbering follows the standard braille convention:
+- Returns a list with 64 items, where each item is a list containing the active dot numbers (1–6) of the corresponding braille character.
+- Dot numbering follows the standard braille convention:
 - 1 4
 - 2 5
 - 3 6
@@ -151,8 +151,8 @@ Dot numbering follows the standard braille convention:
 def dot_numbering_string_list() -> list[str]:
 ```
 ### Description
-Returns a list with 64 strings, where each string contains the active dot numbers of the corresponding braille character, separated by hyphens.
-This format is commonly used in educational material and documentation.
+- Returns a list with 64 strings, where each string contains the active dot numbers of the corresponding braille character, separated by hyphens.
+- This format is commonly used in educational material and documentation.
 ### Details
 - Output type: list[str]
 - Total items: 64
@@ -165,14 +165,14 @@ This format is commonly used in educational material and documentation.
 
 # Mapping group (0003)
 
-## 0003-AA - Get the Braille Using the Unicode Position
+## 0003-AA - Get the Index Using the Braille Character
 ```python
 @staticmethod
 def get_braille_to_index(braille: str) -> int:
 ```
 ### Description
-Returns the numeric index (0–63) of a given braille Unicode character.
-The index corresponds to the character’s position in the Unicode Braille Patterns block, ranging from U+2800 to U+283F.
+- Returns the numeric index (0–63) of a given braille Unicode character. 
+- The index corresponds to the character’s position in the Unicode Braille Patterns block, ranging from U+2800 to U+283F.
 ### Details
 - Input type: str (a single braille Unicode character)
 - Output type: int
@@ -181,15 +181,15 @@ The index corresponds to the character’s position in the Unicode Braille Patte
 - Mapping: braille_character → index
 - Lookup source: internal static table of 64 braille symbols
 
-## 0003-AB - Get the Unicode Position Using the Braille
+## 0003-AB - Get the Braille Character Using the Index
 ```python
 @staticmethod
 def get_index_to_braille(index: int) -> str:
 ```
 
 ### Description
-Returns the braille Unicode character corresponding to the given index (0–63).
-The index maps directly to the Unicode Braille Patterns block, from U+2800 to U+283F.
+- Returns the braille Unicode character corresponding to the given index (0–63). 
+- The index maps directly to the Unicode Braille Patterns block, from U+2800 to U+283F.
 ### Details
 - Input type: int
 - Valid range: 0 to 63
@@ -198,15 +198,15 @@ The index maps directly to the Unicode Braille Patterns block, from U+2800 to U+
 - Mapping: index → braille_character
 - Lookup source: internal static table of 64 braille symbols
 
-## 0003-B - Receives a List of Numbers and Returns a List in Braille
+## 0003-B - Receives a List of Braille Characters and Returns a List of Indices
 ```python
 @staticmethod
-def get_braille_list_to_index_list(braille_list: list) -> list:
+def get_braille_list_to_index_list(braille_list: list[str]) -> list[int]:
 ```
 
 ### Description
-Converts a list of braille Unicode characters into a list of their corresponding numeric indices (0–63).
-Each character is mapped using the same Unicode Braille Patterns block (U+2800 to U+283F).
+- Converts a list of braille Unicode characters into a list of their corresponding numeric indices (0–63). 
+- Each character is mapped using the same Unicode Braille Patterns block (U+2800 to U+283F).
 ### Details
 - Input type: list[str]
 - Output type: list[int]
