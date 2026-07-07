@@ -2,12 +2,12 @@
 
 `English Version`  
 - BrailleTable is a library that provides tables and utilities related to the braille system, using the Unicode Braille Patterns block as its reference.
-- Version 1.0.1
+- Version 1.0.0
 - This library is considered unstable, and at the moment, there are no plans for future updates.
 
 # Tables group (0004)
 
-## 0004-A - Braille List
+## 0004-AA - Braille List
 ```python
 @staticmethod
 def braille_list() -> list[str]:
@@ -21,6 +21,21 @@ def braille_list() -> list[str]:
 - Total items: 64
 - Unicode block: Braille Patterns
 - Order: strictly sequential from U+2800 (⠀) to U+283F (⠿)
+
+## 0004-AB - Braille Reverse List
+```python
+@staticmethod
+def reverse_braille_list() -> list[str]:
+```
+
+### Description
+- Returns all 64 six‑dot braille symbols.
+- Contains the complete set of the standard Unicode Braille Pattern block (U+2800 to U+283F), but rearranged.
+### Details
+- Output type: list[str]
+- Total items: 64
+- Unicode block: Braille Patterns
+- Order: Reverse binary order (mirrored bit‑mapping of dots 1‑2‑3 with dots 4‑5‑6)
 
 ## 0004-BA - Braille Binary
 ```python
