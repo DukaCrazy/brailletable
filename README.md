@@ -3,7 +3,7 @@
 `English Version`  
 - BrailleTable is a library that provides tables and utilities related to the braille system, using the Unicode Braille Patterns block as its reference.
 - Version 1.0.0
-- This library is considered unstable, and at the moment, there are no plans for future updates.
+- This library is considered stable, and at the moment, there are no plans for future updates.
 
 # Tables group (0004)
 
