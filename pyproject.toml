@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "brailletable"
-version = "1.0.1"
+version = "1.0.2"
 description = "A complete and extensible Unicode Braille processing library."
 authors = [
     { name = "Nagao Yuji" }
@@ -16,5 +16,5 @@ keywords = ["braille", "unicode", "accessibility", "API", "binary", "blind", "ed
 
 [project.urls]
 Homepage = "https://github.com/DukaCrazy/brailletable"
-Documentation = "https://github.com/DukaCrazy/brailletable"
+Documentation = "https://brailletable.blogspot.com/2026/06/readme.html"
 Source = "https://github.com/DukaCrazy/brailletable"
