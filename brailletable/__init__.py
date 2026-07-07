@@ -1,7 +1,7 @@
 class BrailleTable():
     
 #---------------------------------------- Tables group (0004) ----------------------------------------
-    #0004-A
+    #0004-AA
     @staticmethod
     def braille_list() -> list[str]:
         """
@@ -29,6 +29,36 @@ class BrailleTable():
             '⠨','⠩','⠪','⠫','⠬','⠭','⠮','⠯',
             '⠰','⠱','⠲','⠳','⠴','⠵','⠶','⠷',
             '⠸','⠹','⠺','⠻','⠼','⠽','⠾','⠿'
+        ]
+    
+    #0004-AB
+    @staticmethod
+    def reverse_braille_list() -> list[str]:
+        """
+        EN
+        Returns all 64-dot Braille characters organized in reverse binary order (mirrored bit mapping), ideal for fast decoding and indexing.
+
+        JP
+        高速なデコードやインデックス作成に適した、逆バイナリ順（反転ビットマッピング）で並べられた6点点字の全64文字を返します。
+
+        IT
+        Restituisce tutti i 64 caratteri braille a 6 punti organizzati in ordine binario inverso (mappatura dei bit speculare), ideale per la decodifica rapida e l'indicizzazione.
+
+        PT
+        Retorna todos os 64 caracteres braille de 6 pontos organizados na ordem binária inversa (mapeamento de bits espelhado), ideal para decodificação rápida e indexação.
+
+        CH
+        返回按逆二进制顺序（镜像位映射）排列 All 64 个六点点字符号，非常适合快速解码和索引。
+        """
+        return [
+            '⠀','⠈','⠐','⠘','⠠','⠨','⠰','⠸',
+            '⠁','⠉','⠑','⠙','⠡','⠩','⠱','⠹',
+            '⠂','⠊','⠒','⠚','⠢','⠪','⠲','⠺',
+            '⠃','⠋','⠓','⠛','⠣','⠫','⠳','⠻',
+            '⠄','⠌','⠔','⠜','⠤','⠬','⠴','⠼',
+            '⠅','⠍','⠕','⠝','⠥','⠭','⠵','⠽',
+            '⠆','⠎','⠖','⠞','⠦','⠮','⠶','⠾',
+            '⠇','⠏','⠗','⠟','⠧','⠯','⠷','⠿'
         ]
     
     #0004-BA
