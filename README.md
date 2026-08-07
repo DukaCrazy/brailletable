@@ -226,9 +226,9 @@ def get_braille_list_to_index_list(braille_list: list[str]) -> list[int]:
 - Input type: list[str]
 - Output type: list[int]
 - Valid index range: 0 to 63
-
-  <img src="./img/logo.png" alt="Logo" width="500" height="493">
 - Unicode block: Braille Patterns
 - Mapping: [braille_char1, braille_char2, ...] → [index1, index2, ...]
 - Conversion rule: each character is processed using get_braille_to_index()
+
+    <img src="./img/logo.png" alt="Logo" width="500" height="493">
 
